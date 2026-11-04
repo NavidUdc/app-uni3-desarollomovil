@@ -1,3 +1,71 @@
 <resources>
     <string name="app_name">AppCrudUsers</string>
+
+    <!-- General / Navigation -->
+    <string name="loading">Cargando...</string>
+    <string name="error">Error</string>
+    <string name="ok">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="drawer_open">Abrir menú</string>
+    <string name="drawer_close">Cerrar menú</string>
+
+    <!-- Sidebar / Navigation Drawer -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_users">Usuarios</string>
+    <string name="nav_create_user">Crear Usuario</string>
+    <string name="nav_logout">Cerrar Sesión</string>
+    <string name="menu_section_account">Cuenta</string>
+
+    <!-- Auth / Login & Register -->
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="email_hint">Correo Electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button">Ingresar</string>
+    <string name="login_error_empty">Por favor, ingrese correo y contraseña.</string>
+    <string name="login_success">Sesión iniciada correctamente.</string>
+    <string name="btn_register">Registrarse</string>
+    <string name="register_prompt">¿No tienes cuenta? Regístrate aquí</string>
+    <string name="session_expired_msg">Tu sesión ha expirado o no es válida. Por favor, inicia sesión nuevamente.</string>
+
+    <!-- Welcome -->
+    <string name="welcome_title">Bienvenido</string>
+    <string name="welcome_subtitle">Sesión activa iniciada correctamente</string>
+    <string name="session_user_label">Usuario actual:</string>
+    <string name="session_token_label">Token JWT (caché local):</string>
+    <string name="btn_users_management">Gestión de Usuarios</string>
+    <string name="btn_logout">Cerrar Sesión</string>
+    <string name="logout_confirm">¿Desea cerrar la sesión actual?</string>
+
+    <!-- User List -->
+    <string name="users_list_title">Lista de Usuarios</string>
+    <string name="users_empty">No hay usuarios registrados.</string>
+    <string name="btn_create_user">Nuevo Usuario</string>
+    <string name="btn_refresh">Actualizar</string>
+
+    <!-- User Detail -->
+    <string name="user_detail_title">Detalle del Usuario</string>
+    <string name="user_id_label">ID:</string>
+    <string name="user_name_label">Nombre:</string>
+    <string name="user_email_label">Correo:</string>
+    <string name="user_role_label">Rol:</string>
+    <string name="user_status_label">Estado:</string>
+    <string name="user_created_at_label">Fecha de creación:</string>
+    <string name="btn_edit">Editar</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="delete_confirm_title">Eliminar Usuario</string>
+    <string name="delete_confirm_msg">¿Está seguro de que desea eliminar este usuario?</string>
+    <string name="delete_success">Usuario eliminado exitosamente.</string>
+
+    <!-- Create / Edit User -->
+    <string name="create_user_title">Crear Usuario</string>
+    <string name="edit_user_title">Editar Usuario</string>
+    <string name="name_hint">Nombre completo</string>
+    <string name="role_hint">Rol (ADMIN / USER)</string>
+    <string name="status_hint">Estado (ACTIVE / INACTIVE / SUSPENDED)</string>
+    <string name="role_label">Rol del usuario:</string>
+    <string name="status_label">Estado del usuario:</string>
+    <string name="btn_save">Guardar</string>
+    <string name="user_created_success">Usuario creado exitosamente.</string>
+    <string name="user_updated_success">Usuario actualizado exitosamente.</string>
 </resources>
