@@ -3,6 +3,7 @@ package com.jcaa.appcrudusers.adapter.config;
 import com.google.gson.Gson;
 import com.jcaa.appcrudusers.adapter.http.ApiJsonConverterFactory;
 import com.jcaa.appcrudusers.adapter.http.UsersApi;
+import com.jcaa.appcrudusers.adapter.http.VuelosApi;
 import java.util.concurrent.TimeUnit;
 import lombok.experimental.UtilityClass;
 import okhttp3.HttpUrl;
@@ -11,7 +12,7 @@ import retrofit2.Retrofit;
 
 @UtilityClass
 public class HttpClientFactory {
-    public static final String BASE_URL = "https://users-management-api-orb0.onrender.com/";
+    public static final String BASE_URL = "https://users-viajes-management-spring-boot.onrender.com/";
 
     private static final String HTTPS_REQUIRED_MESSAGE = "La API requiere HTTPS.";
     private static final long CONNECT_TIMEOUT_SECONDS = 20L;
@@ -42,5 +43,18 @@ public class HttpClientFactory {
                 .addConverterFactory(new ApiJsonConverterFactory(gson))
                 .build()
                 .create(UsersApi.class);
+    }
+
+    public static VuelosApi createVuelosApi(final Gson gson) {
+        final HttpUrl base = HttpUrl.get(BASE_URL);
+        if (!base.isHttps()) {
+            throw new IllegalArgumentException(HTTPS_REQUIRED_MESSAGE);
+        }
+        return new Retrofit.Builder()
+                .baseUrl(base)
+                .client(newClient())
+                .addConverterFactory(new ApiJsonConverterFactory(gson))
+                .build()
+                .create(VuelosApi.class);
     }
 }
