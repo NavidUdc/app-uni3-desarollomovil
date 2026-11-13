@@ -14,6 +14,14 @@
             android:id="@+id/nav_create_user"
             android:icon="@drawable/ic_person_add"
             android:title="@string/nav_create_user" />
+        <item
+            android:id="@+id/nav_vuelos"
+            android:icon="@drawable/ic_flight"
+            android:title="@string/nav_vuelos" />
+        <item
+            android:id="@+id/nav_create_vuelo"
+            android:icon="@drawable/ic_flight"
+            android:title="@string/nav_create_vuelo" />
     </group>
 
     <item android:title="@string/menu_section_account">

@@ -51,6 +51,24 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
+        <activity
+            android:name=".entrypoint.ui.VueloListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".entrypoint.ui.VueloDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".entrypoint.ui.CreateVueloActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".entrypoint.ui.UpdateVueloActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>

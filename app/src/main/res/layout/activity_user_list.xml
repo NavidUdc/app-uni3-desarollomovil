@@ -36,6 +36,21 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/btnGoToVuelos"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_go_to_vuelos" />
+
+    </LinearLayout>
+
     <ProgressBar
         android:id="@+id/progressBarUsers"
         style="?android:attr/progressBarStyle"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/welcome_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -69,12 +70,26 @@
 
         </LinearLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnUserManagement"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="@string/btn_users_management" />
+            android:layout_height="60dp"
+            android:layout_marginTop="28dp"
+            app:icon="@drawable/ic_people"
+            app:iconGravity="textStart"
+            android:text="@string/btn_users_management"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVuelosManagement"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            app:icon="@drawable/ic_flight"
+            app:iconGravity="textStart"
+            android:text="@string/btn_vuelos_management"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnLogout"

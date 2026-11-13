@@ -179,6 +179,18 @@ public abstract class BaseDrawerActivity extends AppCompatActivity implements Na
                 startActivity(intent);
             }
             return true;
+        } else if (itemId == R.id.nav_vuelos) {
+            if (!VueloListActivity.class.isAssignableFrom(this.getClass())) {
+                final Intent intent = new Intent(this, VueloListActivity.class);
+                startActivity(intent);
+            }
+            return true;
+        } else if (itemId == R.id.nav_create_vuelo) {
+            if (!CreateVueloActivity.class.isAssignableFrom(this.getClass())) {
+                final Intent intent = new Intent(this, CreateVueloActivity.class);
+                startActivity(intent);
+            }
+            return true;
         } else if (itemId == R.id.nav_logout) {
             confirmLogoutFromDrawer();
             return true;

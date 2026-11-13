@@ -5,13 +5,18 @@ import android.content.Context;
 import com.jcaa.appcrudusers.adapter.config.AdapterFactory;
 import com.jcaa.appcrudusers.domain.port.out.ClearSessionPort;
 import com.jcaa.appcrudusers.domain.port.out.CreateUserPort;
+import com.jcaa.appcrudusers.domain.port.out.CreateVueloPort;
 import com.jcaa.appcrudusers.domain.port.out.DeleteUserPort;
+import com.jcaa.appcrudusers.domain.port.out.DeleteVueloPort;
 import com.jcaa.appcrudusers.domain.port.out.GetUserByIdPort;
+import com.jcaa.appcrudusers.domain.port.out.GetVueloByIdPort;
 import com.jcaa.appcrudusers.domain.port.out.ListUsersPort;
+import com.jcaa.appcrudusers.domain.port.out.ListVuelosPort;
 import com.jcaa.appcrudusers.domain.port.out.LoadSessionPort;
 import com.jcaa.appcrudusers.domain.port.out.LoginPort;
 import com.jcaa.appcrudusers.domain.port.out.SaveSessionPort;
 import com.jcaa.appcrudusers.domain.port.out.UpdateUserPort;
+import com.jcaa.appcrudusers.domain.port.out.UpdateVueloPort;
 
 import javax.inject.Singleton;
 
@@ -74,5 +79,30 @@ public final class AdapterModule {
     @Provides
     public DeleteUserPort provideDeleteUserPort(final AdapterFactory adapterFactory) {
         return adapterFactory.getDeleteUser();
+    }
+
+    @Provides
+    public CreateVueloPort provideCreateVueloPort(final AdapterFactory adapterFactory) {
+        return adapterFactory.getCreateVuelo();
+    }
+
+    @Provides
+    public GetVueloByIdPort provideGetVueloByIdPort(final AdapterFactory adapterFactory) {
+        return adapterFactory.getGetVueloById();
+    }
+
+    @Provides
+    public ListVuelosPort provideListVuelosPort(final AdapterFactory adapterFactory) {
+        return adapterFactory.getListVuelos();
+    }
+
+    @Provides
+    public UpdateVueloPort provideUpdateVueloPort(final AdapterFactory adapterFactory) {
+        return adapterFactory.getUpdateVuelo();
+    }
+
+    @Provides
+    public DeleteVueloPort provideDeleteVueloPort(final AdapterFactory adapterFactory) {
+        return adapterFactory.getDeleteVuelo();
     }
 }

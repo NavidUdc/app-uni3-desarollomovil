@@ -45,9 +45,11 @@ public class WelcomeActivity extends BaseDrawerActivity {
         tvSessionEmail = findViewById(R.id.tvSessionEmail);
         tvSessionToken = findViewById(R.id.tvSessionToken);
         final Button btnUserManagement = findViewById(R.id.btnUserManagement);
+        final Button btnVuelosManagement = findViewById(R.id.btnVuelosManagement);
         final Button btnLogout = findViewById(R.id.btnLogout);
 
         btnUserManagement.setOnClickListener(v -> startActivity(new Intent(WelcomeActivity.this, UserListActivity.class)));
+        btnVuelosManagement.setOnClickListener(v -> startActivity(new Intent(WelcomeActivity.this, VueloListActivity.class)));
         btnLogout.setOnClickListener(v -> confirmLogout());
 
         loadSessionData();
