@@ -14,6 +14,8 @@
     <string name="nav_home">Inicio</string>
     <string name="nav_users">Usuarios</string>
     <string name="nav_create_user">Crear Usuario</string>
+    <string name="nav_vuelos">Viajes / Vuelos</string>
+    <string name="nav_create_vuelo">Registrar Viaje / Vuelo</string>
     <string name="nav_logout">Cerrar Sesión</string>
     <string name="menu_section_account">Cuenta</string>
 
@@ -34,6 +36,9 @@
     <string name="session_user_label">Usuario actual:</string>
     <string name="session_token_label">Token JWT (caché local):</string>
     <string name="btn_users_management">Gestión de Usuarios</string>
+    <string name="btn_vuelos_management">Gestión de Viajes / Vuelos</string>
+    <string name="btn_go_to_vuelos">✈️ Ir a Gestión de Viajes / Vuelos</string>
+    <string name="btn_go_to_users">👥 Ir a Gestión de Usuarios</string>
     <string name="btn_logout">Cerrar Sesión</string>
     <string name="logout_confirm">¿Desea cerrar la sesión actual?</string>
 
@@ -68,4 +73,37 @@
     <string name="btn_save">Guardar</string>
     <string name="user_created_success">Usuario creado exitosamente.</string>
     <string name="user_updated_success">Usuario actualizado exitosamente.</string>
+
+    <!-- Flight List -->
+    <string name="vuelos_list_title">Gestión de Viajes / Vuelos</string>
+    <string name="vuelos_empty">No hay viajes/vuelos registrados.</string>
+    <string name="btn_create_vuelo">Nuevo Viaje / Vuelo</string>
+
+    <!-- Flight Detail -->
+    <string name="vuelo_detail_title">Detalle del Viaje / Vuelo</string>
+    <string name="vuelo_id_label">ID:</string>
+    <string name="vuelo_numero_label">Número de Vuelo:</string>
+    <string name="vuelo_aerolinea_label">Aerolínea:</string>
+    <string name="vuelo_agencia_label">Agencia de Viajes:</string>
+    <string name="vuelo_fecha_compra_label">Fecha de Compra:</string>
+    <string name="vuelo_fecha_salida_label">Fecha de Salida:</string>
+    <string name="vuelo_fecha_llegada_label">Fecha de Llegada:</string>
+    <string name="vuelo_origen_label">Aeropuerto de Salida:</string>
+    <string name="vuelo_destino_label">Aeropuerto de Llegada:</string>
+    <string name="vuelo_cliente_label">Cliente:</string>
+    <string name="vuelo_puesto_label">Puesto:</string>
+    <string name="vuelo_avion_label">Avión:</string>
+    <string name="vuelo_piloto_label">Piloto:</string>
+    <string name="vuelo_estado_label">Estado:</string>
+    <string name="vuelo_valor_label">Valor:</string>
+    <string name="vuelo_usuario_id_label">ID Usuario:</string>
+    <string name="delete_vuelo_confirm_title">Eliminar Vuelo</string>
+    <string name="delete_vuelo_confirm_msg">¿Está seguro de que desea eliminar este vuelo?</string>
+    <string name="delete_vuelo_success">Vuelo eliminado exitosamente.</string>
+
+    <!-- Create / Edit Flight -->
+    <string name="create_vuelo_title">Registrar Vuelo</string>
+    <string name="edit_vuelo_title">Editar Vuelo</string>
+    <string name="vuelo_created_success">Vuelo registrado exitosamente.</string>
+    <string name="vuelo_updated_success">Vuelo actualizado exitosamente.</string>
 </resources>

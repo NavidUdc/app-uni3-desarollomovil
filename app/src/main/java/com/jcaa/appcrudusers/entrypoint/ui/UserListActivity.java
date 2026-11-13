@@ -78,6 +78,11 @@ public class UserListActivity extends BaseDrawerActivity {
 
         btnRefresh.setOnClickListener(v -> loadUsers());
         btnCreate.setOnClickListener(v -> startActivity(new Intent(UserListActivity.this, CreateUserActivity.class)));
+
+        final Button btnGoToVuelos = findViewById(R.id.btnGoToVuelos);
+        if (btnGoToVuelos != null) {
+            btnGoToVuelos.setOnClickListener(v -> startActivity(new Intent(UserListActivity.this, VueloListActivity.class)));
+        }
     }
 
     @Override
